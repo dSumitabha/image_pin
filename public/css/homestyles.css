@@ -1,0 +1,38 @@
+:root {
+    --color1 : #FFF2D8;
+    --color2 : #F4BF96;
+    --color3 : #CE5A67;
+    --color4 : #1F1717;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing : border-box;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    background: var(--color1);
+    gap : 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    display: block;
+    width: 300px;
+    padding: 10px 0;
+    background-color: var(--color3);
+    text-align: center;
+    color: var(--color1);
+    text-decoration: none;
+    transition: 1s;
+}
+a:hover {
+    background-color: var(--color4);
+}
+.disabled {
+    background-color: grey;
+}

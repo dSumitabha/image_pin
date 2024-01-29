@@ -1,0 +1,153 @@
+:root {
+    --color1 : #FFF2D8;
+    --color2 : #F4BF96;
+    --color3 : #CE5A67;
+    --color4 : #1F1717;
+}
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Styling body **/
+body{
+    background-color: var(--color1);
+    color: var(--color4);
+}
+/* styling for nav bar */
+nav{
+    width: 100%;
+    height: 10vh;
+    background: var(--color4);
+    color: var(--color1);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Styling for container */
+.container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Styling for signin forms */
+.signin-form {
+    aspect-ratio: 1/1;
+    width : 48vw; 
+    min-width: 48vh;
+    background: var(--color2); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+
+}
+.signin-form form {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+}
+/* signin from styling */
+.signin-form form input {
+    display: block;
+    width: 90%;
+    max-width: 45ch;
+    padding: 5px 10px 5px 5px;
+    border: none;
+    margin: 10px 0;
+}
+input[type="submit"] {
+    background: var(--color4);
+    color: var(--color1);
+}
+
+
+            /* Creator Dashboad */
+.upload-form form {
+    display : flex;
+    flex-flow : column nowrap;
+    width : 90%;
+    margin: 10px auto;
+}
+
+.upload-form form input[type="file"] {
+    margin: 0;
+}
+
+.upload-form form label {
+    height: 30vh;
+    display: inline-block;
+    background-color: var(--color2);
+    color: var(--color1);
+    padding-top : 15vh;
+    text-align: center;
+    cursor: pointer;
+}
+.upload-form form input[type="file"] {
+    background-color: var(--color4);
+}
+
+.upload-form form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+}
+
+.upload-form form input[type="submit"] {
+    display: block;
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px;
+    background-color: var(--color4);
+    color: var(--color1);
+    border: none;
+    cursor: pointer;
+}
+
+            /* Post Stylings */
+.card {
+    width: 90%;
+    margin : 5vh auto;
+}
+.creator-name {
+    font-size: 25px;
+    position: relative;
+    top : 28px;
+    background-color: #22222240;
+
+}
+.post-img {
+    width: 100%;
+    margin: 0;
+    vertical-align: top;
+}
+.caption {
+    background-color: var(--color4);
+    color: var(--color1);
+    padding: 5px 5px 5px 10px ;
+    margin-bottom: 5px;
+}
+.likes {
+    padding-left: 5px;
+    background-color: var(--color2);
+    
+}
+.anchor-button {
+    display: inline-block;
+    width : 49%;
+    background-color: var(--color3);
+    color : var(--color1);
+    text-decoration: none;
+    padding: 10px 0;
+    text-align: center;
+    max-height: 40px;
+}
